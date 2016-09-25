@@ -16,3 +16,15 @@ npm install
 node app
 ```
 Now visit http://127.0.0.1:8080/api/v1 in your browser.
+
+Postman Collection
+--------
+You can Download Postman collection from the link given below.
+
+[Download][1]
+
+__Note : __
+
+Make sure to replace the header value such as __x-access-token__.
+
+[1]:https://raw.githubusercontent.com/Learn2Crack/android-login-registration-authentication-server/master/postman/Node-Login.postman_collection.json

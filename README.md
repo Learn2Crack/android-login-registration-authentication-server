@@ -37,4 +37,25 @@ Video Demo
 
 https://www.youtube.com/watch?v=5b0wWZuTazA
 
+Node npm modules used
+--------
+
+basic-auth
+
+bcryptjs
+
+body-parser
+
+express
+
+jsonwebtoken
+
+mongoose
+
+morgan
+
+nodemailer
+
+randomstring
+
 [1]:https://raw.githubusercontent.com/Learn2Crack/android-login-registration-authentication-server/master/postman/Node-Login.postman_collection.json

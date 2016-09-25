@@ -23,7 +23,7 @@ You can Download Postman collection from the link given below.
 
 [Download][1]
 
-__Note : __
+__Note :__ 
 
 Make sure to replace the header value such as __x-access-token__.
 

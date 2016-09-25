@@ -1,0 +1,130 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Learn2Crack Node Login",
+		"_postman_id": "c0634f1a-754c-2350-3e46-42cea6a1c336",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"url": "http://127.0.0.1:8080/api/v1/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Raj Amal W\",\n\t\"email\":\"raj.amalw@gmail.com\",\n\t\"password\":\"rajamalw\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"url": "http://127.0.0.1:8080/api/v1/authenticate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic cmFqLmFtYWx3QGdtYWlsLmNvbTpyYWphbWFsdw==",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Profile",
+			"request": {
+				"url": "http://127.0.0.1:8080/api/v1/users/raj.amalw@gmail.com",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdGF0dXMiOjIwMCwibWVzc2FnZSI6InJhai5hbWFsd0BnbWFpbC5jb20iLCJpYXQiOjE0NzQzNzY4MjcsImV4cCI6MTQ3NDM3ODI2N30.adMsRuj2NbxEHhVCmSA_ulcihaxDg8DtW83cj4ZzW-A",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Change Password ",
+			"request": {
+				"url": "http://127.0.0.1:8080/api/v1/users/raj.amalw@gmail.com",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdGF0dXMiOjIwMCwibWVzc2FnZSI6InJhai5hbWFsd0BnbWFpbC5jb20iLCJpYXQiOjE0NzQzNzY4MjcsImV4cCI6MTQ3NDM3ODI2N30.adMsRuj2NbxEHhVCmSA_ulcihaxDg8DtW83cj4ZzW-A",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"password\":\"raj\",\n\t\"newPassword\":\"raj\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Reset Password Init",
+			"request": {
+				"url": "http://127.0.0.1:8080/api/v1/users/raj.amalw@gmail.com/password",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Reset Password Finish",
+			"request": {
+				"url": "http://127.0.0.1:8080/api/v1/users/raj.amalw@gmail.com/password",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"token\":\"J2RsPMkq\",\n\t\"password\":\"rajamalw\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
